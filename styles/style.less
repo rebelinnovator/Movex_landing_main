@@ -152,7 +152,7 @@ body{
                         backdrop-filter: blur(17px);
                         cursor: pointer;
                         &:hover{
-                            background: linear-gradient(270deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+                            background: linear-gradient(270deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
                         }
                         &:active{
                             background: linear-gradient(270deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
@@ -174,10 +174,10 @@ body{
     
                             }
                         }
-                        &:hover{
-                            background-color: rgba(255, 255, 255, 0.3);
+                        // &:hover{
+                        //     background-color: rgba(255, 255, 255, 0.3);
 
-                        }
+                        // }
                       
                     }
                 }
@@ -458,6 +458,17 @@ body{
                 }
             }
         }
+        .right-date{
+            font-family: 'Inter', sans-serif;
+    
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: white;
+            opacity: .3;
+        }
     }
     .isfull{
         @media (max-width: 990px) {
@@ -475,18 +486,9 @@ body{
             display: none;
         }
     }
-    .right-date{
-        font-family: 'Inter', sans-serif;
-
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 18px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: white;
-        opacity: .3;
-    }
+ 
     .vertical-center{
         align-self: center;
     }
+    
 }
