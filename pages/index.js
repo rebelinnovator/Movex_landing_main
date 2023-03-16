@@ -8,6 +8,8 @@ import "react-multi-carousel/lib/styles.css";
 
 export default function Home() {
 
+  const [showMenu,setShowMenu] = useState(false)
+
   const onWhitePaper = () =>{
     //window.open("");
   }
@@ -20,6 +22,9 @@ export default function Home() {
   
   const onLaunchTest = () =>{
     window.open("https://app.movex.exchange/");
+  }
+  const onShowMenu = ()=>{
+    setShowMenu(!showMenu)
   }
   return (
     <div>
@@ -48,49 +53,49 @@ export default function Home() {
                 <path d="M109.8 17.2251L117 25.9596H112.893L107.747 19.7311L102.625 25.9596H98.5174L105.693 17.2251L98.8798 8.9285H102.987L107.747 14.7434L112.53 8.9285H116.638L109.8 17.2251Z" fill="white"/>
                 <path d="M70.5786 5.86016C70.5786 5.1789 71.0495 4.58901 71.7115 4.44108L89.0778 0.560424C89.9817 0.358446 90.8393 1.04933 90.8393 1.9795V6.66272C90.8393 7.34398 90.3683 7.93387 89.7063 8.08179L72.34 11.9625C71.4361 12.1644 70.5786 11.4735 70.5786 10.5434V5.86016Z" fill="url(#paint0_linear_3537_12343)"/>
                 <path d="M72.5823 7.91213C72.5823 7.23193 73.0518 6.64266 73.7125 6.49367L91.0788 2.57741C91.9834 2.37341 92.843 3.06454 92.843 3.99587V8.74808C92.843 9.42828 92.3735 10.0176 91.7128 10.1665L74.3465 14.0828C73.4419 14.2868 72.5823 13.5957 72.5823 12.6643V7.91213Z" fill="url(#paint1_linear_3537_12343)"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M91.1763 3.01386L73.81 6.93012C73.3526 7.03326 73.0276 7.44122 73.0276 7.91213V12.6643C73.0276 13.3091 73.6227 13.7876 74.2489 13.6464L91.6152 9.73009C92.0726 9.62695 92.3977 9.21899 92.3977 8.74808V3.99587C92.3977 3.3511 91.8026 2.87263 91.1763 3.01386ZM73.7125 6.49367C73.0518 6.64266 72.5823 7.23193 72.5823 7.91213V12.6643C72.5823 13.5957 73.4419 14.2868 74.3465 14.0828L91.7128 10.1665C92.3735 10.0176 92.843 9.42828 92.843 8.74808V3.99587C92.843 3.06454 91.9834 2.37341 91.0788 2.57741L73.7125 6.49367Z" fill="url(#paint2_linear_3537_12343)"/>
+                <path fillRule="evenodd" clipRule="evenodd" d="M91.1763 3.01386L73.81 6.93012C73.3526 7.03326 73.0276 7.44122 73.0276 7.91213V12.6643C73.0276 13.3091 73.6227 13.7876 74.2489 13.6464L91.6152 9.73009C92.0726 9.62695 92.3977 9.21899 92.3977 8.74808V3.99587C92.3977 3.3511 91.8026 2.87263 91.1763 3.01386ZM73.7125 6.49367C73.0518 6.64266 72.5823 7.23193 72.5823 7.91213V12.6643C72.5823 13.5957 73.4419 14.2868 74.3465 14.0828L91.7128 10.1665C92.3735 10.0176 92.843 9.42828 92.843 8.74808V3.99587C92.843 3.06454 91.9834 2.37341 91.0788 2.57741L73.7125 6.49367Z" fill="url(#paint2_linear_3537_12343)"/>
                 <path d="M70.5786 16.0755C70.5786 15.3953 71.0481 14.806 71.7088 14.657L89.0751 10.7407C89.9797 10.5367 90.8393 11.2279 90.8393 12.1592V16.9114C90.8393 17.5916 90.3697 18.1809 89.709 18.3299L72.3427 22.2461C71.4381 22.4501 70.5786 21.759 70.5786 20.8277V16.0755Z" fill="url(#paint3_linear_3537_12343)"/>
                 <path d="M72.5823 17.4353C72.5823 16.7645 73.0391 16.1809 73.6879 16.0226L91.0542 11.7859C91.9652 11.5636 92.843 12.2568 92.843 13.1986V18.5713C92.843 19.242 92.3862 19.8257 91.7373 19.984L74.371 24.2207C73.46 24.4429 72.5823 23.7497 72.5823 22.808V17.4353Z" fill="url(#paint4_linear_3537_12343)"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M91.1593 12.2206L73.793 16.4572C73.3438 16.5668 73.0276 16.9709 73.0276 17.4353V22.808C73.0276 23.4599 73.6352 23.9398 74.2659 23.786L91.6322 19.5493C92.0814 19.4397 92.3977 19.0356 92.3977 18.5713V13.1986C92.3977 12.5466 91.79 12.0667 91.1593 12.2206ZM73.6879 16.0226C73.0391 16.1809 72.5823 16.7645 72.5823 17.4353V22.808C72.5823 23.7497 73.46 24.4429 74.371 24.2207L91.7373 19.984C92.3862 19.8257 92.843 19.242 92.843 18.5713V13.1986C92.843 12.2568 91.9652 11.5636 91.0542 11.7859L73.6879 16.0226Z" fill="url(#paint5_linear_3537_12343)"/>
+                <path fillRule="evenodd" clipRule="evenodd" d="M91.1593 12.2206L73.793 16.4572C73.3438 16.5668 73.0276 16.9709 73.0276 17.4353V22.808C73.0276 23.4599 73.6352 23.9398 74.2659 23.786L91.6322 19.5493C92.0814 19.4397 92.3977 19.0356 92.3977 18.5713V13.1986C92.3977 12.5466 91.79 12.0667 91.1593 12.2206ZM73.6879 16.0226C73.0391 16.1809 72.5823 16.7645 72.5823 17.4353V22.808C72.5823 23.7497 73.46 24.4429 74.371 24.2207L91.7373 19.984C92.3862 19.8257 92.843 19.242 92.843 18.5713V13.1986C92.843 12.2568 91.9652 11.5636 91.0542 11.7859L73.6879 16.0226Z" fill="url(#paint5_linear_3537_12343)"/>
                 <path d="M70.5786 26.6052C70.5786 25.9345 71.0354 25.3508 71.6842 25.1925L89.0505 20.9558C89.9615 20.7336 90.8393 21.4268 90.8393 22.3685V27.7412C90.8393 28.4119 90.3824 28.9956 89.7336 29.1539L72.3673 33.3906C71.4563 33.6128 70.5786 32.9196 70.5786 31.9779V26.6052Z" fill="url(#paint6_linear_3537_12343)"/>
                 <path d="M72.5823 27.6115C72.5823 26.9408 73.0391 26.3571 73.6879 26.1988L91.0542 21.9622C91.9652 21.7399 92.843 22.4331 92.843 23.3749V28.7475C92.843 29.4183 92.3862 30.002 91.7373 30.1602L74.371 34.3969C73.46 34.6192 72.5823 33.926 72.5823 32.9842V27.6115Z" fill="url(#paint7_linear_3537_12343)"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M91.1593 22.3968L73.793 26.6335C73.3438 26.7431 73.0276 27.1472 73.0276 27.6115V32.9842C73.0276 33.6362 73.6352 34.1161 74.2659 33.9623L91.6322 29.7256C92.0814 29.616 92.3977 29.2119 92.3977 28.7475V23.3749C92.3977 22.7229 91.79 22.243 91.1593 22.3968ZM73.6879 26.1988C73.0391 26.3571 72.5823 26.9408 72.5823 27.6115V32.9842C72.5823 33.926 73.46 34.6192 74.371 34.3969L91.7373 30.1602C92.3862 30.002 92.843 29.4183 92.843 28.7475V23.3749C92.843 22.4331 91.9652 21.7399 91.0542 21.9622L73.6879 26.1988Z" fill="url(#paint8_linear_3537_12343)"/>
+                <path fillRule="evenodd" clipRule="evenodd" d="M91.1593 22.3968L73.793 26.6335C73.3438 26.7431 73.0276 27.1472 73.0276 27.6115V32.9842C73.0276 33.6362 73.6352 34.1161 74.2659 33.9623L91.6322 29.7256C92.0814 29.616 92.3977 29.2119 92.3977 28.7475V23.3749C92.3977 22.7229 91.79 22.243 91.1593 22.3968ZM73.6879 26.1988C73.0391 26.3571 72.5823 26.9408 72.5823 27.6115V32.9842C72.5823 33.926 73.46 34.6192 74.371 34.3969L91.7373 30.1602C92.3862 30.002 92.843 29.4183 92.843 28.7475V23.3749C92.843 22.4331 91.9652 21.7399 91.0542 21.9622L73.6879 26.1988Z" fill="url(#paint8_linear_3537_12343)"/>
                 <defs>
                   <linearGradient id="paint0_linear_3537_12343" x1="80.7089" y1="2.60469" x2="82.3436" y2="9.73707" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#204ADF"/>
-                    <stop offset="1" stop-color="#20B1DF" stop-opacity="0"/>
+                    <stop stopColor="#204ADF"/>
+                    <stop offset="1" stopColor="#20B1DF" stopOpacity="0"/>
                   </linearGradient>
                   <linearGradient id="paint1_linear_3537_12343" x1="82.7126" y1="4.63981" x2="84.3759" y2="11.831" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#204ADF"/>
-                    <stop offset="1" stop-color="#20B1DF" stop-opacity="0"/>
+                    <stop stopColor="#204ADF"/>
+                    <stop offset="1" stopColor="#20B1DF" stopOpacity="0"/>
                   </linearGradient>
                   <linearGradient id="paint2_linear_3537_12343" x1="82.7126" y1="2.17957" x2="83.6582" y2="10.5382" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="white"/>
-                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    <stop stopColor="white"/>
+                    <stop offset="1" stopColor="white" stopOpacity="0"/>
                   </linearGradient>
                   <linearGradient id="paint3_linear_3537_12343" x1="80.7089" y1="12.8031" x2="82.3722" y2="19.9943" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#20DF9A"/>
-                    <stop offset="1" stop-color="#21F4B5" stop-opacity="0"/>
+                    <stop stopColor="#20DF9A"/>
+                    <stop offset="1" stopColor="#21F4B5" stopOpacity="0"/>
                   </linearGradient>
                   <linearGradient id="paint4_linear_3537_12343" x1="82.7126" y1="14.011" x2="84.6425" y2="21.7239" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#20DF9A"/>
-                    <stop offset="1" stop-color="#21F4B5" stop-opacity="0"/>
+                    <stop stopColor="#20DF9A"/>
+                    <stop offset="1" stopColor="#21F4B5" stopOpacity="0"/>
                   </linearGradient>
                   <linearGradient id="paint5_linear_3537_12343" x1="82.7126" y1="11.3495" x2="83.8169" y2="20.3726" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="white"/>
-                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    <stop stopColor="white"/>
+                    <stop offset="1" stopColor="white" stopOpacity="0"/>
                   </linearGradient>
                   <linearGradient id="paint6_linear_3537_12343" x1="80.7089" y1="23.1809" x2="82.6388" y2="30.8938" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#DF2020"/>
-                    <stop offset="1" stop-color="#C420DF" stop-opacity="0"/>
+                    <stop stopColor="#DF2020"/>
+                    <stop offset="1" stopColor="#C420DF" stopOpacity="0"/>
                   </linearGradient>
                   <linearGradient id="paint7_linear_3537_12343" x1="82.7126" y1="24.1873" x2="84.6425" y2="31.9002" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#DF2020"/>
-                    <stop offset="1" stop-color="#C420DF" stop-opacity="0"/>
+                    <stop stopColor="#DF2020"/>
+                    <stop offset="1" stopColor="#C420DF" stopOpacity="0"/>
                   </linearGradient>
                   <linearGradient id="paint8_linear_3537_12343" x1="82.7126" y1="21.5258" x2="83.8169" y2="30.5488" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="white"/>
-                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    <stop stopColor="white"/>
+                    <stop offset="1" stopColor="white" stopOpacity="0"/>
                   </linearGradient>
                 </defs>
               </svg>
@@ -109,7 +114,7 @@ export default function Home() {
                 </div>
                 <div className='button'>
                   <svg width="98" height="21" viewBox="0 0 98 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.1262 5.50006L8.56311 0.5L0 5.50006V15.4999L1.86435 16.5886V6.58953L8.56157 2.67916L15.2588 6.58952V14.4105L8.56157 18.3208L5.07992 16.288V8.4693L8.5585 6.43868L12.0371 8.4693V12.5307L8.5585 14.5613L8.13308 14.313V10.2547L10.2599 9.01279L8.55696 8.01909L6.43113 9.25957V15.4975L8.56003 16.7405L13.9045 13.6202V7.37982L8.56003 4.25954L3.21556 7.37982V17.3775L8.56311 20.5L17.1262 15.4999V5.50006Z" fill="url(#paint0_linear_3549_10586)"/>
+                    <path fillRule="evenodd" clipRule="evenodd" d="M17.1262 5.50006L8.56311 0.5L0 5.50006V15.4999L1.86435 16.5886V6.58953L8.56157 2.67916L15.2588 6.58952V14.4105L8.56157 18.3208L5.07992 16.288V8.4693L8.5585 6.43868L12.0371 8.4693V12.5307L8.5585 14.5613L8.13308 14.313V10.2547L10.2599 9.01279L8.55696 8.01909L6.43113 9.25957V15.4975L8.56003 16.7405L13.9045 13.6202V7.37982L8.56003 4.25954L3.21556 7.37982V17.3775L8.56311 20.5L17.1262 15.4999V5.50006Z" fill="url(#paint0_linear_3549_10586)"/>
                     <path d="M25.2481 6.26929H21.8835V7.1495V7.98571V13.399V14.2206V15.1154H25.6472C25.6472 15.1154 29.6588 14.9834 29.6588 10.685C29.6588 6.40132 25.2481 6.26929 25.2481 6.26929ZM23.5757 7.98571H25.2481C25.2481 7.98571 27.9374 8.13241 27.9374 10.685C27.9374 13.2523 25.2481 13.399 25.2481 13.399H23.5757V7.98571Z" fill="white"/>
                     <path d="M31.7126 9.83416V11.5506H38.5542V9.83416H31.7126ZM31.7126 13.399V15.1154H38.5542V13.399H31.7126ZM31.7126 6.26929V7.98571H38.5542V6.26929H31.7126Z" fill="white"/>
                     <path d="M41.3422 9.83416V11.5506H48.1838V9.83416H41.3422ZM41.3422 13.399V15.1154H48.1838V13.399H41.3422ZM41.3422 6.26929V7.98571H48.1838V6.26929H41.3422Z" fill="white"/>
@@ -120,8 +125,8 @@ export default function Home() {
                     <path d="M93.3904 15.1154V11.7413L95.987 15.1154H98.0001L94.5865 10.685L98.0001 6.26929H95.987L93.3904 9.46228V6.26929H91.6982V15.1154H93.3904Z" fill="white"/>
                     <defs>
                       <linearGradient id="paint0_linear_3549_10586" x1="13.8708" y1="7.4697" x2="8.39774" y2="20.4809" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#B4FFED"/>
-                        <stop offset="1" stop-color="#54B8F9"/>
+                        <stop stopColor="#B4FFED"/>
+                        <stop offset="1" stopColor="#54B8F9"/>
                       </linearGradient>
                     </defs>
                   </svg>
@@ -133,12 +138,34 @@ export default function Home() {
             </div>
             <div className='ismobile vertical-center'>
               <div className='buttons'>
-                <div className='trayIcon'>
+                <div className='trayIcon'  onClick={onShowMenu}>
                   <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 11.3333H15M1 6.33325H15M1 1.33325H15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1 11.3333H15M1 6.33325H15M1 1.33325H15" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 </div>
               </div>
+            </div>
+          </div>
+          <div className={`mobileMenu ${showMenu ? 'appearFromRight' : 'hideToRight'}`} >
+            <div className='top'>
+              <svg onClick={onShowMenu} width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 13L1 1M13 1L1 13" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </div>
+            <div className='content'>
+              <div className='item' onClick={onWhitePaper}>
+                WHITEPAPER
+              </div>
+              <div className='item' onClick={onDiscord}>
+                DISCORD
+              </div>
+              <div className='item' onClick={onTwitter}>
+                TWITTER
+              </div>
+              <div className='item' onClick={onLaunchTest}>
+                LAUNCH TEST
+              </div>
+
             </div>
           </div>
           <div className='video_desc'>

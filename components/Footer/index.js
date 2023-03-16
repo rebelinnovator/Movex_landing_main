@@ -5,11 +5,11 @@ export default function Footer(){
                 <div className="footer-left">
                     <div className="footer-left-mark">
                         <svg width="35" height="41" viewBox="0 0 35 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M34.7767 10.2501L17.3884 0L0 10.2501V30.7499L3.78578 32.9815V12.4835L17.3852 4.46728L30.9847 12.4835V28.5165L17.3852 36.5327L10.3153 32.3654V16.3371L17.379 12.1743L24.4426 16.3371V24.6629L17.379 28.8257L16.5151 28.3166V19.997L20.8339 17.4512L17.3759 15.4141L13.0591 17.9571V30.7449L17.3821 33.293L28.2347 26.8964V14.1036L17.3821 7.70705L6.52956 14.1036V34.5989L17.3884 41L34.7767 30.7499V10.2501Z" fill="url(#paint0_linear_3615_965)"/>
+                            <path fillRule="evenodd" clipRule="evenodd" d="M34.7767 10.2501L17.3884 0L0 10.2501V30.7499L3.78578 32.9815V12.4835L17.3852 4.46728L30.9847 12.4835V28.5165L17.3852 36.5327L10.3153 32.3654V16.3371L17.379 12.1743L24.4426 16.3371V24.6629L17.379 28.8257L16.5151 28.3166V19.997L20.8339 17.4512L17.3759 15.4141L13.0591 17.9571V30.7449L17.3821 33.293L28.2347 26.8964V14.1036L17.3821 7.70705L6.52956 14.1036V34.5989L17.3884 41L34.7767 30.7499V10.2501Z" fill="url(#paint0_linear_3615_965)"/>
                             <defs>
                                 <linearGradient id="paint0_linear_3615_965" x1="28.1662" y1="14.2879" x2="16.8719" y2="40.8842" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#B4FFED"/>
-                                    <stop offset="1" stop-color="#54B8F9"/>
+                                    <stop stopColor="#B4FFED"/>
+                                    <stop offset="1" stopColor="#54B8F9"/>
                                 </linearGradient>
                             </defs>
                         </svg>

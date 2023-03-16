@@ -75,6 +75,43 @@ body{
                     }
                 }
             }
+            .mobileMenu{
+                position: absolute;
+                top: 0;
+                left: 0%;
+                height: 100%;
+                width: 100%;
+                background-color: black;
+                z-index: 20;
+                
+                .top{
+                    margin: 30px 30px 20px 30px;
+                    text-align: right;
+                    svg{
+                        cursor: pointer;
+                    }
+                }
+                .content{
+                    color: white;
+                    margin-top: 50px;
+                    .item{
+                        cursor: pointer;
+                        margin-top: 10px;
+                        cursor: pointer;
+                        font-family: Poppins;
+                        font-size: 24px;
+                        font-weight: 400;
+                        line-height: 36px;
+                        letter-spacing: 0em;                        
+                    }
+                }
+                @media (min-width: 991px){
+                 display: none;
+                }
+                @media (max-width: 991px){
+                    display: black;
+                }
+            }
             .video{
                 object-fit: cover;
                 position: absolute;
@@ -489,6 +526,14 @@ body{
  
     .vertical-center{
         align-self: center;
+    }
+    .appearFromRight{
+        transition: left 0.5s;
+        left: 0% !important;
+    }
+    .hideToRight{
+        transition: left 0.5s;
+        left: 100% !important;
     }
     
 }
