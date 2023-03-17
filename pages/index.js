@@ -19,7 +19,9 @@ export default function Home() {
   const onTwitter = () =>{
     window.open("https://twitter.com/joinMovEX");
   }
-  
+  const onMedium = () =>{
+    window.open("https://medium.com/@moveexchange/introduction-to-movex-c58a79d9ca6e");
+  }
   const onLaunchTest = () =>{
     window.open("https://app.movex.exchange/");
   }
@@ -105,6 +107,9 @@ export default function Home() {
               <div className='buttons'>
                 <div className='button' onClick={onWhitePaper}>
                   WHITEPAPER
+                  <div className='commingSoon reverse'>
+                    Comming soon
+                  </div>
                 </div>
                 <div className='button' onClick={onDiscord}>
                   DISCORD
@@ -130,6 +135,9 @@ export default function Home() {
                       </linearGradient>
                     </defs>
                   </svg>
+                  <div className='commingSoon reverse'>
+                    Comming soon
+                  </div>
                 </div>
                 <div className='button circle-btn' onClick={onLaunchTest}>
                   LAUNCH TESTNET
@@ -520,19 +528,25 @@ export default function Home() {
                     <p className="title">
                         Company
                     </p>
-                    <p className="title">
+                    <p className="item">
                         DeepBook
+                        <span className='commingSoon reverse'>
+                                Comming soon
+                        </span>
                     </p>
                     <p className="item">
                         Whitepaper
+                        <span className='commingSoon reverse'>
+                                Comming soon
+                        </span>
                     </p>
-                    <p className="item">
+                    <p className="item" onClick={onTwitter}>
                         Twitter
                     </p>
-                    <p className="item">
+                    <p className="item" onClick={onDiscord}>
                         Discord
                     </p>
-                    <p className="item">
+                    <p className="item" onClick={onMedium}>
                         Medium
                     </p>
                     <p className='right-date ismobile'>
@@ -542,12 +556,15 @@ export default function Home() {
                 <div className="footer-right-policy">
                     <p  className="title">
                         Privacy Policy and Terms of Service
+                        
                     </p>
                     <p className="item">
                         Privacy Policy
+                     
                     </p>
                     <p className="item">
                         Terms of service
+                     
                     </p>
                 </div>
               </div>
