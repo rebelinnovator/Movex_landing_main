@@ -14,7 +14,7 @@ export default function Home() {
     //window.open("");
   }
   const onDiscord = () =>{
-    window.open("https://discord.gg/U5BPsCFCRu");
+    window.open("https://discord.com/invite/TN9nMUtMWp");
   }
   const onTwitter = () =>{
     window.open("https://twitter.com/joinMovEX");
@@ -27,6 +27,10 @@ export default function Home() {
   }
   const onShowMenu = ()=>{
     setShowMenu(!showMenu)
+  }
+  const onDeepBook = () =>{
+    window.open("https://sui-deepbook.com/");
+
   }
   return (
     <div>
@@ -117,7 +121,7 @@ export default function Home() {
                 <div className='button' onClick={onTwitter}>
                   TWITTER
                 </div>
-                <div className='button'>
+                <div className='button' onClick={onDeepBook}>
                   <svg width="98" height="21" viewBox="0 0 98 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" clipRule="evenodd" d="M17.1262 5.50006L8.56311 0.5L0 5.50006V15.4999L1.86435 16.5886V6.58953L8.56157 2.67916L15.2588 6.58952V14.4105L8.56157 18.3208L5.07992 16.288V8.4693L8.5585 6.43868L12.0371 8.4693V12.5307L8.5585 14.5613L8.13308 14.313V10.2547L10.2599 9.01279L8.55696 8.01909L6.43113 9.25957V15.4975L8.56003 16.7405L13.9045 13.6202V7.37982L8.56003 4.25954L3.21556 7.37982V17.3775L8.56311 20.5L17.1262 15.4999V5.50006Z" fill="url(#paint0_linear_3549_10586)"/>
                     <path d="M25.2481 6.26929H21.8835V7.1495V7.98571V13.399V14.2206V15.1154H25.6472C25.6472 15.1154 29.6588 14.9834 29.6588 10.685C29.6588 6.40132 25.2481 6.26929 25.2481 6.26929ZM23.5757 7.98571H25.2481C25.2481 7.98571 27.9374 8.13241 27.9374 10.685C27.9374 13.2523 25.2481 13.399 25.2481 13.399H23.5757V7.98571Z" fill="white"/>
@@ -135,9 +139,9 @@ export default function Home() {
                       </linearGradient>
                     </defs>
                   </svg>
-                  <div className='commingSoon reverse'>
+                  {/* <div className='commingSoon reverse'>
                     Comming soon
-                  </div>
+                  </div> */}
                 </div>
                 <div className='button circle-btn' onClick={onLaunchTest}>
                   LAUNCH TESTNET
@@ -528,11 +532,11 @@ export default function Home() {
                     <p className="title">
                         Company
                     </p>
-                    <p className="item">
+                    <p className="item" onClick={onDeepBook}>
                         DeepBook
-                        <span className='commingSoon reverse'>
+                        {/* <span className='commingSoon reverse'>
                                 Comming soon
-                        </span>
+                        </span> */}
                     </p>
                     <p className="item">
                         Whitepaper
