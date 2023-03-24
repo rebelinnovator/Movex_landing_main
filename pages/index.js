@@ -30,7 +30,9 @@ export default function Home() {
   }
   const onDeepBook = () =>{
     window.open("https://sui-deepbook.com/");
-
+  }
+  const onMovex = () =>{
+    window.open("https://app.movex.exchange/");
   }
   return (
     <div>
@@ -184,7 +186,7 @@ export default function Home() {
               <h1>#1 Dex on Sui</h1>
               <p>Built for best trading and liquidity provision experience.</p>
               <div className='video_header_button'>
-                <div className='btn'>
+                <div className='btn' onClick={onMovex}>
                   <div className='content'>
                     <div className='mark-center'>
                       <svg width="102" height="30" viewBox="0 0 102 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -231,7 +233,7 @@ export default function Home() {
                     </span>
                   </div>
                 </div>
-                <div className='btn'>
+                <div className='btn' onClick={onDeepBook}>
                   <div className='content'>
                     <div className='mark-center'>
                       <svg width="27" height="30" viewBox="0 0 27 30" fill="none" xmlns="http://www.w3.org/2000/svg">
