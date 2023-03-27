@@ -548,11 +548,11 @@ export default function Home() {
                                 Comming soon
                         </span> */}
                     </p>
-                    <p className="item">
+                    <p className="item" onClick={onWhitePaper}>
                         Whitepaper
-                        <span className='commingSoon reverse'>
+                        {/* <span className='commingSoon reverse'>
                                 Comming soon
-                        </span>
+                        </span> */}
                     </p>
                     <p className="item" onClick={onTwitter}>
                         Twitter
