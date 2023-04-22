@@ -187,8 +187,8 @@ export default function Home() {
             </div>
           </div>
           <div className='video_desc'>
-              <h1>#1 Dex on Sui</h1>
-              <p>Built for best trading and liquidity provision experience.</p>
+              <h1>#1 Hyper Defi on Sui</h1>
+              <p>#1 DEX on Sui, now scaling up to Defi everything</p>
               <div className='video_header_button'>
                 <div className='btn' onClick={onMovex}>
                   <div className='content'>
