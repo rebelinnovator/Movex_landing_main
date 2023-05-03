@@ -190,7 +190,7 @@ export default function Home() {
               <h1>#1 Hyper Defi on Sui</h1>
               <p>#1 DEX on Sui, now scaling up to Defi everything</p>
               <div className='video_header_button'>
-                <div className='btn' onClick={onMovex}>
+                <div className='btn' onClick={()=>{/*onMovex*/}}>
                   <div className='content'>
                     <div className='mark-center'>
                       <svg width="102" height="30" viewBox="0 0 102 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -236,6 +236,9 @@ export default function Home() {
                       #1 Dex on Sui
                     </span>
                   </div>
+                   <span className='commingSoon reverse'>
+                        Comming soon
+                  </span>
                 </div>
                 <div className='btn' onClick={onDeepBook}>
                   <div className='content'>
