@@ -50,12 +50,7 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500,600&display=swap" rel="stylesheet"/>
       </Head>
       <main>
-        
-        <div className='video_intro'>
-          <video muted loop autoPlay className="video">
-            <source src='/background.mp4' type="video/mp4"/>
-          </video>
-          <div className='navbar'>
+      <div className='navbar'>
             <div className='logo'>
               <a>
               <svg onClick={onLogo} width="117" height="35" viewBox="0 0 117 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -164,6 +159,11 @@ export default function Home() {
               </div>
             </div>
           </div>
+        <div className='video_intro'>
+          <video muted loop autoPlay className="video">
+            <source src='/background.mp4' type="video/mp4"/>
+          </video>
+        
           <div className={`mobileMenu ${showMenu ? 'appearFromRight' : 'hideToRight'}`} >
             <div className='top'>
               <svg onClick={onShowMenu} width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
