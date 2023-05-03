@@ -144,8 +144,8 @@ export default function Home() {
                     Comming soon
                   </div> */}
                 </div>
-                <div className='button circle-btn' onClick={onLaunchTest}>
-                  LAUNCH TESTNET
+                <div className='button circle-btn' onClick={()=>{/*onLaunchTest*/}}>
+                  Comming Soon
                 </div>
               </div>
             </div>
