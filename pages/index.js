@@ -14,7 +14,7 @@ export default function Home() {
     window.open("https://docs.movex.exchange/");
   }
   const onDiscord = () =>{
-    window.open("https://discord.com/invite/TN9nMUtMWp");
+    window.open("https://discord.gg/8rVNBhHSPX");
   }
   const onTwitter = () =>{
     window.open("https://twitter.com/joinMovEX");
